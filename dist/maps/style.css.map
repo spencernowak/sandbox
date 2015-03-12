@@ -1,0 +1,1 @@
+{"version":3,"sources":["/Users/snowak/Sites/sandbox/less/style.less"],"names":[],"mappings":"AAAA,IACa,4DACA,oDACZ,YACA,aAGD,OACC,UAGD,EACC","file":"style.css","sourcesContent":["svg{\n\tbackground: linear-gradient(to top, #ccc 0%, #fff 100%);\n\twidth: 100px;\n\theight: 100px;\n}\n\ncircle{\n\tfill: #000;\n}\n\np{\n\tcolor: #111;\n}\n"],"sourceRoot":"/source/"}

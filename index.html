@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>Angular Sandbox</title>
+
+	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="dist/js/app.js"></script>
+
+	<link rel="stylesheet" href="dist/css/style.css" />
+
+</head>
+<body>
+
+	<div ng-controller="myController">
+		<input ng-model="searchTerm" ng-change="searchTermChanged()"></span>
+
+		<ul ng-hide="taskSelected"> 
+			<li ng-repeat="task in tasks | filter:searchTerm" ng-click="setText(task.name)">{{task.name}}</li>
+		</ul>
+	
+	</div> <!-- /myController -->
+
+	<div  ng-controller="svgController">
+		<svg xmlns="http://www.w3.org/2000/svg">
+			<circle ng-repeat="p in points" ng-attr-cx="{{p.x}}" ng-attr-cy="{{p.y}}" ng-attr-r="{{p.radius}}"></circle>
+		</svg>
+
+		<table>
+			<tr>
+				<th>X</th>
+				<th>Y</th>
+				<th>Radius</th>
+				
+			</tr>
+			<tr ng-repeat="p in points">
+				<td><input type="number" ng-model="p.x"></td>
+				<td><input type="number" ng-model="p.y"></td>
+				<td><input type="number" ng-model="p.radius"></td>
+				<td><button ng-click="deletePoint(p)">Delete</button></td>
+			
+			</tr>
+		
+		
+		</table>
+
+		<button ng-click="addPoint()">Add a point</button>
+
+	</div>
+
+
+
+
+
+</body>
+</html>
