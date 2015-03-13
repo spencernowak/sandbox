@@ -1,7 +1,6 @@
 (function () {
 
-    var log = require('./log');
-
+    var log = require('./modules/log');
     log();
 
     var angular = require('angular');
@@ -73,7 +72,5 @@
         };
 
     }]);
-
-
 
 }());

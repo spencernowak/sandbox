@@ -1,0 +1,1 @@
+{"version":3,"sources":["/Users/snowak/Sites/sandbox/less/_subsheet.less"],"names":[],"mappings":"AACA,KADA,KAEI,eACA","file":"_subsheet.css","sourcesContent":["html,\nbody{\n    background: red;\n    width: 100%;\n\n\n\n}\n\n"],"sourceRoot":"/source/"}
